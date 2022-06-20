@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>WellFlix.Catalog.Domain</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WellFlix.Catalog.Infra.CrossCutting\WellFlix.Catalog.Infra.CrossCutting.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Entities\Category\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Entities\Category\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Entities\Category\**" />
+    </ItemGroup>
+
+</Project>

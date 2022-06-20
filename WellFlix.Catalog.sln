@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellFlix.Catalog.Domain", "src\WellFlix.Catalog.Domain\WellFlix.Catalog.Domain.csproj", "{838FFC3A-8A19-43D1-8E53-D79472B3BE2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellFlix.Catalog.Infra.CrossCutting", "src\WellFlix.Catalog.Infra.CrossCutting\WellFlix.Catalog.Infra.CrossCutting.csproj", "{D38D1007-A698-4B2C-8A27-2A5FDF9552CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellFlix.Catalog.Infra.Data", "src\WellFlix.Catalog.Infra.Data\WellFlix.Catalog.Infra.Data.csproj", "{80920171-CF4F-4232-9346-CDAF27B5A808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellFlix.Catalog.Application", "src\WellFlix.Catalog.Application\WellFlix.Catalog.Application.csproj", "{39A2ABAE-0B80-40D6-BEF0-C8D6E48B18B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellFlix.Catalog.Api", "src\WellFlix.Catalog.Api\WellFlix.Catalog.Api.csproj", "{15AC90BC-1967-49FC-8DC8-AC8F7FCF3641}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{51935902-FFCA-4EC2-BD90-CE0829086D9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "env", "env", "{C01CB011-A402-4C52-9859-2CE117FFD09D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2B7B3C17-5A0C-4ADD-9E22-E9C55C38E507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellFlix.Catalog.UnitTests", "tests\WellFlix.Catalog.UnitTests\WellFlix.Catalog.UnitTests.csproj", "{A370F32C-95C1-4F76-B50C-7847D34B1514}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{838FFC3A-8A19-43D1-8E53-D79472B3BE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{838FFC3A-8A19-43D1-8E53-D79472B3BE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{838FFC3A-8A19-43D1-8E53-D79472B3BE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{838FFC3A-8A19-43D1-8E53-D79472B3BE2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D38D1007-A698-4B2C-8A27-2A5FDF9552CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D38D1007-A698-4B2C-8A27-2A5FDF9552CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D38D1007-A698-4B2C-8A27-2A5FDF9552CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D38D1007-A698-4B2C-8A27-2A5FDF9552CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80920171-CF4F-4232-9346-CDAF27B5A808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80920171-CF4F-4232-9346-CDAF27B5A808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80920171-CF4F-4232-9346-CDAF27B5A808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80920171-CF4F-4232-9346-CDAF27B5A808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A2ABAE-0B80-40D6-BEF0-C8D6E48B18B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A2ABAE-0B80-40D6-BEF0-C8D6E48B18B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A2ABAE-0B80-40D6-BEF0-C8D6E48B18B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A2ABAE-0B80-40D6-BEF0-C8D6E48B18B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15AC90BC-1967-49FC-8DC8-AC8F7FCF3641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15AC90BC-1967-49FC-8DC8-AC8F7FCF3641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15AC90BC-1967-49FC-8DC8-AC8F7FCF3641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15AC90BC-1967-49FC-8DC8-AC8F7FCF3641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A370F32C-95C1-4F76-B50C-7847D34B1514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A370F32C-95C1-4F76-B50C-7847D34B1514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A370F32C-95C1-4F76-B50C-7847D34B1514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A370F32C-95C1-4F76-B50C-7847D34B1514}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15AC90BC-1967-49FC-8DC8-AC8F7FCF3641} = {51935902-FFCA-4EC2-BD90-CE0829086D9E}
+		{80920171-CF4F-4232-9346-CDAF27B5A808} = {51935902-FFCA-4EC2-BD90-CE0829086D9E}
+		{39A2ABAE-0B80-40D6-BEF0-C8D6E48B18B2} = {51935902-FFCA-4EC2-BD90-CE0829086D9E}
+		{838FFC3A-8A19-43D1-8E53-D79472B3BE2D} = {51935902-FFCA-4EC2-BD90-CE0829086D9E}
+		{D38D1007-A698-4B2C-8A27-2A5FDF9552CD} = {51935902-FFCA-4EC2-BD90-CE0829086D9E}
+		{A370F32C-95C1-4F76-B50C-7847D34B1514} = {2B7B3C17-5A0C-4ADD-9E22-E9C55C38E507}
+	EndGlobalSection
+EndGlobal

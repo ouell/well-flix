@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>WellFlix.Catalog.Application</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="AppService\Category\DeleteCategory" />
+      <Folder Include="AppService\Category\GetCategory" />
+      <Folder Include="AppService\Category\ListCategory" />
+      <Folder Include="AppService\Category\UpdateCategory" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WellFlix.Catalog.Domain\WellFlix.Catalog.Domain.csproj" />
+      <ProjectReference Include="..\WellFlix.Catalog.Infra.CrossCutting\WellFlix.Catalog.Infra.CrossCutting.csproj" />
+    </ItemGroup>
+
+</Project>
