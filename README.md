@@ -1,1 +1,1 @@
-# well-flix
+![Logo](/wellFlix.png)
