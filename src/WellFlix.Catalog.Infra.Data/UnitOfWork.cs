@@ -1,4 +1,4 @@
-﻿using WellFlix.Infra.CrossCutting.Interfaces;
+﻿using WellFlix.Catalog.Infra.CrossCutting.Interfaces;
 
 namespace WellFlix.Catalog.Infra.Data;
 

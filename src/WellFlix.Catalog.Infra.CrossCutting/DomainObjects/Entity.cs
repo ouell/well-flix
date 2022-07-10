@@ -1,7 +1,4 @@
-﻿using WellFlix.Catalog.Infra.CrossCutting.DomainObjects;
-using WellFlix.Infra.CrossCutting.Message;
-
-namespace WellFlix.Infra.CrossCutting.DomainObjects;
+﻿namespace WellFlix.Catalog.Infra.CrossCutting.DomainObjects;
 
 public abstract class Entity : NotifiableObject
 {

@@ -8,7 +8,23 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="ErrorOr" Version="0.1.0" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.6">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WellFlix.Catalog.Application\WellFlix.Catalog.Application.csproj" />
+      <ProjectReference Include="..\WellFlix.Catalog.Infra.Data\WellFlix.Catalog.Infra.Data.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Controllers\WeatherForecastController.cs" />
+      <Compile Remove="WeatherForecast.cs" />
     </ItemGroup>
 
 </Project>

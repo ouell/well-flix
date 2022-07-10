@@ -1,4 +1,4 @@
-﻿using WellFlix.Infra.CrossCutting.DomainObjects;
+﻿using WellFlix.Catalog.Infra.CrossCutting.DomainObjects;
 
 namespace WellFlix.Catalog.Infra.CrossCutting.SeedWork.SearchableRepository;
 

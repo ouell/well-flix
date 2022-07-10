@@ -4,7 +4,7 @@ using WellFlix.Catalog.Domain.Entities;
 
 namespace WellFlix.Catalog.Infra.Data.Configuration;
 
-public class CategoryConfiguration : IEntityTypeConfiguration<Category>
+internal class CategoryConfiguration : IEntityTypeConfiguration<Category>
 {
     public void Configure(EntityTypeBuilder<Category> builder)
     {
@@ -16,5 +16,8 @@ public class CategoryConfiguration : IEntityTypeConfiguration<Category>
         
         builder.Property(p => p.Description)
                .HasMaxLength(10_000);
+
+        builder.Property(p => p.CreatedAt)
+               .IsRequired();
     }
 }

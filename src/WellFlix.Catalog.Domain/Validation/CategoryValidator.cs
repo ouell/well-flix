@@ -7,7 +7,7 @@ public class CategoryValidator : AbstractValidator<Category>
 {
     public static readonly CategoryValidator Instance = new();
 
-    public CategoryValidator()
+    private CategoryValidator()
     {
         RuleFor(x => x.Name)
            .NotNull()

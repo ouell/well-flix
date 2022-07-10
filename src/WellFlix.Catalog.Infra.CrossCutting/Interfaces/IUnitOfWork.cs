@@ -1,4 +1,4 @@
-﻿namespace WellFlix.Infra.CrossCutting.Interfaces;
+﻿namespace WellFlix.Catalog.Infra.CrossCutting.Interfaces;
 
 public interface IUnitOfWork
 {

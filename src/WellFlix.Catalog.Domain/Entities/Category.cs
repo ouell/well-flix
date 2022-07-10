@@ -1,23 +1,23 @@
 ﻿using WellFlix.Catalog.Domain.Validation;
-using WellFlix.Infra.CrossCutting.DomainObjects;
+using WellFlix.Catalog.Infra.CrossCutting.DomainObjects;
 
 namespace WellFlix.Catalog.Domain.Entities;
 
 public class Category : Entity
 {
-    public string Name { get; private set; }
-    public string Description { get; private set; }
-    public bool IsActive { get; private set; }
-
-
     public Category(string name, string description, bool isActive = true)
     {
         Name = name;
         Description = description;
         IsActive = isActive;
 
+
         Validate(this, CategoryValidator.Instance);
     }
+
+    public string Name { get; private set; }
+    public string Description { get; private set; }
+    public bool IsActive { get; private set; }
 
     public void Activate()
     {

@@ -8,15 +8,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="AppService\Category\DeleteCategory" />
-      <Folder Include="AppService\Category\GetCategory" />
-      <Folder Include="AppService\Category\ListCategory" />
-      <Folder Include="AppService\Category\UpdateCategory" />
+      <ProjectReference Include="..\WellFlix.Catalog.Domain\WellFlix.Catalog.Domain.csproj" />
+      <ProjectReference Include="..\WellFlix.Catalog.Infra.CrossCutting\WellFlix.Catalog.Infra.CrossCutting.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\WellFlix.Catalog.Domain\WellFlix.Catalog.Domain.csproj" />
-      <ProjectReference Include="..\WellFlix.Catalog.Infra.CrossCutting\WellFlix.Catalog.Infra.CrossCutting.csproj" />
+      <PackageReference Include="ErrorOr" Version="0.1.0" />
+      <PackageReference Include="MediatR" Version="10.0.1" />
     </ItemGroup>
 
 </Project>

@@ -1,3 +1,7 @@
-﻿namespace WellFlix.Catalog.Application.AppService.Category.CreateCategory;
+﻿using MediatR;
+using ErrorOr;
 
-public record struct CreateCategoryInput(string Name, string Description, bool IsActive);
+namespace WellFlix.Catalog.Application.AppService.Category.CreateCategory;
+
+public record struct CreateCategoryInput(string Name, string Description, bool IsActive) :
+    IRequest<ErrorOr<CategoryOutput>>;

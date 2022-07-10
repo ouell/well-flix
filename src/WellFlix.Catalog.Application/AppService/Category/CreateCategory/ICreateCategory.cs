@@ -1,6 +1,8 @@
-﻿namespace WellFlix.Catalog.Application.AppService.Category.CreateCategory;
+﻿using MediatR;
+using ErrorOr;
 
-public interface ICreateCategory
+namespace WellFlix.Catalog.Application.AppService.Category.CreateCategory;
+
+public interface ICreateCategory : IRequestHandler<CreateCategoryInput, ErrorOr<CategoryOutput>>
 {
-    
 }
