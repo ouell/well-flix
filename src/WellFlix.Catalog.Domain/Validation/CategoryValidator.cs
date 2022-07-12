@@ -10,7 +10,6 @@ public class CategoryValidator : AbstractValidator<Category>
     private CategoryValidator()
     {
         RuleFor(x => x.Name)
-           .NotNull()
            .NotEmpty()
                .WithMessage("Name should not be empty or null")
            .MinimumLength(3)
@@ -19,7 +18,6 @@ public class CategoryValidator : AbstractValidator<Category>
                .WithMessage("Name should be at most 255 characters long");
         
         RuleFor(x => x.Description)
-           .NotNull()
            .NotEmpty()
                .WithMessage("Description should not be empty or null")
            .MaximumLength(10_000)

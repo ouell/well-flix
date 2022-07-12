@@ -10,8 +10,7 @@ public class Category : Entity
         Name = name;
         Description = description;
         IsActive = isActive;
-
-
+        
         Validate(this, CategoryValidator.Instance);
     }
 
