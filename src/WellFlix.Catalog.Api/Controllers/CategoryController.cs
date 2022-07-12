@@ -24,10 +24,10 @@ public class CategoryController : ApiController
                                             CancellationToken cancellationToken)
     {
         var category = await _mediator.Send(input, cancellationToken);
-
-        return category.Match<IActionResult>(
+        
+        return category.Match(
             success => Created(success.Id.ToString(), success),
-            BadRequest
+            Problem
         );
     }
 
@@ -37,9 +37,9 @@ public class CategoryController : ApiController
     {
         var category = await _mediator.Send(new GetCategoryInput(id), cancellationToken);
 
-        return category.Match<IActionResult>(
+        return category.Match(
             success => Ok(success),
-            NotFound
+            Problem
         );
     }
 }
