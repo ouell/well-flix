@@ -16,6 +16,8 @@ public class Genre : Entity
         Name = name;
         IsActive = isActive;
         _categories = new List<Guid>();
+        
+        Validate(this, GenreValidator.Instance);
     }
     
     public void Activate()
